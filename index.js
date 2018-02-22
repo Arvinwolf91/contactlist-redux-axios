@@ -3,6 +3,3 @@ import App from './src/App';
 
 AppRegistry.registerComponent('ContactList', () => App);
 
-
-
-
