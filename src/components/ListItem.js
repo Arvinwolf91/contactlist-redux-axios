@@ -9,6 +9,8 @@ class ListItem extends Component {
     onRowPress() {
         // navigate using scene key in router.js
         Actions.contactInfo({ contact: this.props.contact });
+        // change navigation bar title in ContactInfo 
+        Actions.refresh({ key: 'contactInfo', title: this.props.contact.name });
     }
 
     render() {
