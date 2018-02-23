@@ -1,11 +1,14 @@
 
 import React, { Component } from 'react';
 import { View, Text, TouchableWithoutFeedback } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import CardSection from './common/CardSection';
 
 class ListItem extends Component {
 
     onRowPress() {
+        // navigate using scene key in router.js
+        Actions.contactInfo({ contact: this.props.contact });
     }
 
     render() {
